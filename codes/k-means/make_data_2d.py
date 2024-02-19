@@ -13,10 +13,9 @@ for i in range(0,2):
 		data[i,j*nb_p_class:(j+1)*nb_p_class:] = np.random.normal(shift[i,j], width[i,j],(nb_p_class,))
 
 
-ind = range(0,4*nb_p_class)
+ind = np.arange(0,4*nb_p_class)
 
 np.random.shuffle(ind)
-
 
 f = open("kmeans_input_file_2d.dat", "w")
 

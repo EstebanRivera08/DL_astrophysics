@@ -13,7 +13,7 @@ for i in range(0,3):
 	for j in range(0,5):
 		data[i,j*nb_p_class:(j+1)*nb_p_class:] = np.random.normal(shift[i,j], width[i,j],(nb_p_class,))
 
-ind = range(0,5*nb_p_class)
+ind = np.arange(0,5*nb_p_class)
 
 np.random.shuffle(ind)
 
